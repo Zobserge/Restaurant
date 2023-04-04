@@ -2333,6 +2333,7 @@ input[type=password]:focus {
 
 .dish__title {
   margin-bottom: 0.375rem;
+  text-align: center;
 }
 
 .dish__text {

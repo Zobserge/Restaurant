@@ -261,7 +261,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // КОНЕЦ ШАПКА ПРИ СКРОЛЕ ==========
   // АНИМАЦИИ
 
-  // new WOW().init();
+  var wow = new WOW({
+    mobile: false
+  });
+  wow.init();
 
   // КОНЕЦ АНИМАЦИЙ ==========
 

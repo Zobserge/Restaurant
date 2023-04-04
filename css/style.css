@@ -2831,7 +2831,7 @@ input[type=password]:focus {
   width: 100%;
 }
 
-.reviews__pic .rev-man {
+.reviews__pic .pic-w {
   position: absolute;
   left: 0;
   bottom: 4rem;

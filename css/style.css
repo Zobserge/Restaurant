@@ -2184,18 +2184,10 @@ input[type=password]:focus {
 /* Блюда */
 
 .popular__dishes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.625rem;
   margin-bottom: 2rem;
-}
-
-.popular__dishes > * {
-  margin-bottom: 0.5rem;
 }
 
 .popular__dishes .pop-dish:last-child {
@@ -3480,16 +3472,6 @@ input[type=password]:focus {
     text-align: center;
   }
 
-  .popular__dishes {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .dish__price .price {
     margin-right: 0;
     margin-bottom: 0.5rem;
@@ -3675,23 +3657,8 @@ input[type=password]:focus {
     margin-bottom: 3.75rem;
   }
 
-  .popular__dishes > * {
-    margin-bottom: 0;
-    margin-right: 0.5rem;
-  }
-
-  .popular__dishes > *:last-child {
-    margin-right: 0;
-  }
-
-  .popular__dishes .pop-dish:last-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .pop-dish {
-    width: 33%;
+  .popular__dishes {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .steps {
@@ -3754,6 +3721,16 @@ input[type=password]:focus {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 33.33333333%;
+  }
+
+  .popular__dishes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .popular__dishes .pop-dish:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .pop-dish {

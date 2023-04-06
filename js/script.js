@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
   bindModal(".bnr-btn-call", ".popup-callback", ".popup-close");
 
   // Кнопка в меню справа
-  bindModal(".nav-offcanvas__call-btn", ".popup-callback", ".popup-close");
+  bindModal(".offcanvas__call-btn", ".popup-callback", ".popup-close");
 
   // Кнопка вызывающая попап с текстовым контентом
   bindModal(".pop-info-btn", ".popup-info", ".popup-close");

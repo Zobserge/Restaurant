@@ -456,6 +456,7 @@ body {
 }
 
 .ov-h {
+  position: relative;
   overflow: hidden !important;
 }
 
@@ -1114,7 +1115,7 @@ input[type=password]:focus {
 
 /* Основа */
 
-.nav-offcanvas {
+.offcanvas {
   position: fixed;
   z-index: 150 !important;
   width: 100%;
@@ -1131,7 +1132,7 @@ input[type=password]:focus {
   transition: opacity 0.3s ease-in-out, background 0.4s ease-out;
 }
 
-.nav-offcanvas__container {
+.offcanvas__container {
   overflow-y: auto;
   position: relative;
   display: -webkit-box;
@@ -1209,7 +1210,7 @@ input[type=password]:focus {
 
 /* Пункты меню */
 
-.nav-close-btn {
+.ofcnvs-close-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,29 +1228,29 @@ input[type=password]:focus {
   cursor: pointer;
 }
 
-.nav-close-btn .close-ic {
+.ofcnvs-close-btn .close-ic {
   width: 0.625rem;
   height: 0.625rem;
 }
 
-.nav-close-btn .close-ic img {
+.ofcnvs-close-btn .close-ic img {
   opacity: 0.5;
 }
 
-.nav-close-btn p {
+.ofcnvs-close-btn p {
   font-size: 0.875rem;
   margin-left: 0.375rem;
 }
 
-.nav-close-btn:hover {
+.ofcnvs-close-btn:hover {
   background-color: white;
 }
 
-.nav-close-btn:hover p {
+.ofcnvs-close-btn:hover p {
   color: #F95555;
 }
 
-.nav-offcanvas__elements span {
+.offcanvas__elements span {
   display: block;
   text-align: center;
   font-size: 16px;
@@ -1265,7 +1266,7 @@ input[type=password]:focus {
   cursor: pointer;
 }
 
-.nav-offcanvas__elements span:hover {
+.offcanvas__elements span:hover {
   background-color: white;
   color: #F95555;
 }
@@ -1274,7 +1275,7 @@ input[type=password]:focus {
 
 /* Контакты */
 
-.nav-offcanvas__contacts {
+.offcanvas__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1288,24 +1289,24 @@ input[type=password]:focus {
   padding: 1.5rem 1rem;
 }
 
-.nav-offcanvas__contacts > * {
+.offcanvas__contacts > * {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.nav-offcanvas__contacts .phone-simp,
-.nav-offcanvas__contacts .mail-simp,
-.nav-offcanvas__contacts .address-simp {
+.offcanvas__contacts .phone-simp,
+.offcanvas__contacts .mail-simp,
+.offcanvas__contacts .address-simp {
   text-align: center;
 }
 
-.nav-offcanvas__contacts .phone-simp .ic,
-.nav-offcanvas__contacts .mail-simp .ic,
-.nav-offcanvas__contacts .address-simp .ic {
+.offcanvas__contacts .phone-simp .ic,
+.offcanvas__contacts .mail-simp .ic,
+.offcanvas__contacts .address-simp .ic {
   display: none;
 }
 
-.nav-offcanvas__contacts .address-simp {
+.offcanvas__contacts .address-simp {
   max-width: 20rem;
 }
 
@@ -3159,7 +3160,7 @@ input[type=password]:focus {
 	  );
   }
 
-  .nav-offcanvas__elements span {
+  .offcanvas__elements span {
     font-size: calc(
 		16px + 4 * (100vw - 280px) / (1400 - 280)
 	  );
@@ -3332,23 +3333,23 @@ input[type=password]:focus {
     margin-bottom: 1rem;
   }
 
-  .nav-offcanvas__container {
+  .offcanvas__container {
     max-width: 30rem;
   }
 
-  .nav-close-btn {
+  .ofcnvs-close-btn {
     padding: 1rem 2rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
 
-  .nav-offcanvas__elements span {
+  .offcanvas__elements span {
     padding: 1.25rem 2rem;
     text-align: left;
   }
 
-  .nav-offcanvas__contacts {
+  .offcanvas__contacts {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -3356,15 +3357,15 @@ input[type=password]:focus {
     padding-right: 2rem;
   }
 
-  .nav-offcanvas__contacts .phone-simp,
-  .nav-offcanvas__contacts .mail-simp,
-  .nav-offcanvas__contacts .address-simp {
+  .offcanvas__contacts .phone-simp,
+  .offcanvas__contacts .mail-simp,
+  .offcanvas__contacts .address-simp {
     text-align: left;
   }
 
-  .nav-offcanvas__contacts .phone-simp .ic,
-  .nav-offcanvas__contacts .mail-simp .ic,
-  .nav-offcanvas__contacts .address-simp .ic {
+  .offcanvas__contacts .phone-simp .ic,
+  .offcanvas__contacts .mail-simp .ic,
+  .offcanvas__contacts .address-simp .ic {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4002,7 +4003,7 @@ input[type=password]:focus {
     font-size: 14px;
   }
 
-  .nav-offcanvas__elements span {
+  .offcanvas__elements span {
     font-size: 20px;
   }
 
